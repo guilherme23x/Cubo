@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.bloco {
+  width: 10rem;
+  position: relative;
+  height: 10rem;
+
+  transform-style: preserve-3d;
+  transition: 20s ease-in-out;
+
+&:hover{
+    transform: rotateX(3600deg) rotateY(720deg) translateZ(5rem);
+}
+
+  & div {
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+  }
+
+  & .topo {
+    background-color: bisque;
+    transform: rotateX(90deg) translateZ(5rem);
+  }
+
+  & .esquerda {
+    background-color: rgb(190, 190, 253);
+    transform: rotateY(-90deg) translateZ(5rem);
+  }
+
+  & .frente {
+    background-color: rgb(255, 151, 151);
+    transform: translateZ(5rem);
+  }
+
+  & .fundo {
+    background-color: rgb(160, 160, 160);
+    transform: translateZ(-5rem);
+  }
+
+  & .direita {
+    background-color: rgb(231, 162, 112);
+    transform: rotateY(90deg) translateZ(5rem);
+    
+  }
+
+  & .baixo {
+    background-color: bisque;
+    transform: rotateX(-90deg) translateZ(5rem);
+}
