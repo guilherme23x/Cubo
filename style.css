@@ -12,6 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+  background-color: #000000ee;
 }
 
 .bloco {
@@ -22,9 +23,9 @@ body {
   transform-style: preserve-3d;
   transition: 20s ease-in-out;
 
-&:hover{
-    transform: rotateX(3600deg) rotateY(720deg) translateZ(5rem);
-}
+  &:hover {
+    transform: rotateX(3600deg) rotateY(1800deg) translateZ(5rem);
+  }
 
   & div {
     width: 10rem;
@@ -59,10 +60,10 @@ body {
   & .direita {
     background-color: rgb(231, 162, 112);
     transform: rotateY(90deg) translateZ(5rem);
-    
   }
 
   & .baixo {
     background-color: bisque;
     transform: rotateX(-90deg) translateZ(5rem);
+  }
 }
